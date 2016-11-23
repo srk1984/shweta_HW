@@ -1,5 +1,4 @@
-﻿//Program to compute factorial of a a small positive integer
-using System;
+﻿//Program to compute factorial from 1 to n
 
 class polynomial
 {
@@ -7,27 +6,31 @@ class polynomial
     {
         string str;
 
-        int x, i, fact = 1;
+        int n, i, fact = 1,k = 0;
 
         //Assigned fact=1
+        //i and k indexes
+
         //Take an integer as input
 
-        Console.Write("Enter a small positive integer : ");
+        Console.Write("Enter a small positive integer jjjj : ");
 
         str = Console.ReadLine();
 
         //Parse the input to get an integer
 
-        x = int.Parse(str);
+        n = int.Parse(str);
 
         //Calculation of factorial
+        Console.WriteLine("value of k :{0}", k);
 
-        for (i = x; i > 0; i--)
+        for (i = 1; i<=n; i++,k++)
         {
             fact *= i;
-        }
 
-        Console.WriteLine("Factorial of {0}! = {1}", x, fact);
+
+            Console.WriteLine("Factorial of {0}! = {1}", k, fact);
+        }
 
         Console.ReadLine();
     }
