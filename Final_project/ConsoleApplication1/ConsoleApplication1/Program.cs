@@ -226,7 +226,8 @@ namespace ConsoleApplication1
                 Console.WriteLine("\t\t A. Add an item in the inventory\n");
                 Console.WriteLine("\t\t C. Change an item in the inventory\n");
                 Console.WriteLine("\t\t D .Delete an item from the inventory\n");
-                Console.WriteLine("\t\t L. List all the items in the inventory\n\n");
+                Console.WriteLine("\t\t L. List all the items in the inventory\n");
+                Console.WriteLine("\t\t Q. Quit\n\n");
                 Console.Write("Enter your choice :");
 
                 var choice = Console.ReadLine();
